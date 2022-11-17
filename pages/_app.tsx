@@ -19,7 +19,7 @@ import Header from "../components/Header";
 
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+  [chain.hardhat, chain.localhost, chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
   [
     alchemyProvider({ apiKey: `${process.env.ALCHEMY_ID}`}),
     publicProvider()
